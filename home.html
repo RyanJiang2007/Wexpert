@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/cpi6liz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cpi6liz.css">
+    <title>Wexpert - Home</title>     
+    <link rel = "stylesheet" href = "personalp.css">
+
+    <style>
+        .thing{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            font-weight: bolder;
+            
+        }
+        .course{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            color: rgb(71, 148, 167);
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            position: absolute;
+            margin-left: 390px;
+            margin-top: 7px;
+            
+        }
+
+        .course:hover{
+            color: cadetblue;
+        }
+        .about{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            color: rgb(71, 148, 167);
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            position: absolute;
+            margin-left: 1000px;
+            margin-top: 7px;
+            
+        }
+
+        .about:hover{
+            color: cadetblue;
+        }
+            
+        
+        .thumbnail {
+            width: 600px;
+            height: 600px;
+            object-fit: cover;
+            padding-left: 120px;
+        }
+    
+        .thumbnailtwo {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        padding-right: 50px;
+        }
+
+        .title{
+        font-family: sofia-pro, sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+        padding-top: 60px;
+        text-align: center;
+        padding-left: 50px;
+        }
+        .titletwo{
+        font-family: sofia-pro, sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+        text-align: center;
+        padding-top: 60px;
+        }
+        .text{
+        font-family: sofia-pro, sans-serif;
+        font-size: 25px;
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        }
+        .texttwo{
+        font-family: sofia-pro, sans-serif;
+        font-size: 25px;
+        padding-top: 50px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        }
+        .buttontype1{
+            background: linear-gradient(90deg,#76EECA,#BCEADC);
+            color: white;
+            height: 65px;
+            width: 200px;
+            border-radius: 200px;
+            border: none;
+            font-family: sofia-pro, sans-serif;
+            cursor: pointer;
+            font-size: 30px;
+            transition: background-color 5s;
+            transition: height 0.5s;
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 290px;
+            position: absolute;
+
+        }
+        .buttontype1:hover{
+            height: 90px;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+        }
+        .buttontype2{
+            color: white;
+            height: 65px;
+            width: 200px;
+            border-radius: 200px;
+            border: none;
+            font-family: sofia-pro, sans-serif;
+            cursor: pointer;
+            font-size: 30px;
+            transition: background-color 5s;
+            transition: height 0.5s;
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 290px;
+            position: absolute;
+
+        }
+        .buttontype1:hover{
+            background-color: aquamarine;
+            height: 90px;
+        }
+        * { 
+ margin: 0; 
+ padding: 0; 
+} 
+
+body{
+background-color: rgb(247, 247, 247);
+}
+    .content{
+    display:flex;
+    background-color: rgb(216, 245, 236);
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a class = "course" href="personalproject.html">Course</a>
+        <a class = "about" href="about.html">About</a>
+    <p class = "thing"><span style = "color: rgb(13, 79, 93);"> &lt;/&gt; </span>
+        <span style = "color: rgb(84, 147, 164)">W</span>
+        <span style = "color: rgb(81, 147, 164)">e</span>
+        <span style = "color: rgb(57, 118, 126)">x</span>
+        <span style = "color: rgb(64, 112, 115)">p</span>
+        <span style = "color: rgb(57, 104, 112)">e</span>
+        <span style = "color: rgb(55, 82, 90)">r</span>
+        <span style = "color:rgb(42, 48, 50)">t</span></p>
+    </div> <!--the heading and nav bar of my website-->
+<br>
+<br>
+<div style="margin:0 auto;display: flex;flex-direction:row;justify-content: space-around" class = "content"> <!--Properties of the texts within home-->
+    <div>
+        <p class="titletwo">Home</p> <!--takes titletwo class's properties-->
+        <p class="text">Wexpert is a online-learning course which gives an introduction for new users to learn the basics of HTML and CSS. It was created as a personal project by Ryan Jiang, currently a sophomore at Southpointe Academy.</p> <!--takes the properties of text class-->
+        <button class="buttontype1"
+        onclick="window.open('./personalproject.html')">Start Intro</button> <!--using JavaScript to allow the button to take it to another page-->
+    </div>
+    <div>
+        <img class = "thumbnailtwo" src="ee.jpg">
+    </div>
+</div>
+</body>
+</html>

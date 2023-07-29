@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://use.typekit.net/cpi6liz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cpi6liz.css">
+    <title>Wexpert - Course</title>     
+    <link rel = "stylesheet" href = "personalp.css">
+    <style>
+        .thing{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            font-weight: bolder;
+            
+        }
+        .home{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            color: rgb(71, 148, 167);
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            position: absolute;
+            margin-left: 390px;
+            margin-top: 7px;
+            
+        }
+
+        .home:hover{
+            color: cadetblue;
+        }
+        .about{
+            background-color: rgb(144, 235, 189);
+            text-align: center;
+            color: rgb(71, 148, 167);
+            padding-bottom: 12px;
+            padding-top: 10px;
+            vertical-align: middle;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            position: absolute;
+            margin-left: 1000px;
+            margin-top: 7px;
+            
+        }
+
+        .about:hover{
+            color: cadetblue;
+        }
+            
+        .thumbnail {
+            width: 600px;
+            height: 600px;
+            object-fit: cover;
+            padding-left: 120px;
+        }
+    
+        .thumbnailtwo {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        padding-right: 120px;
+        }
+
+        .title{
+        font-family: sofia-pro, sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+        padding-top: 60px;
+        text-align: center;
+        }
+        .titletwo{
+        font-family: sofia-pro, sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+        text-align: center;
+        padding-top: 60px;
+        }
+        .text{
+        font-family: sofia-pro, sans-serif;
+        font-size: 25px;
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        }
+        .texttwo{
+        font-family: sofia-pro, sans-serif;
+        font-size: 25px;
+        padding-top: 50px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        }
+        .buttontype1{
+            background-color: rgb(97, 97, 97);
+            color: white;
+            height: 40px;
+            width: 120px;
+            border-radius: 200px;
+            border: none;
+            font-family: sofia-pro, sans-serif;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 5s;
+            transition: height 0.5s;
+            margin-top: 400px;
+            text-align: center;
+        }
+        .buttontype1:hover{
+            background-color: aquamarine;
+            height: 80px;
+        }
+        * { 
+ margin: 0; 
+ padding: 0; 
+} 
+
+body{
+background-color: rgb(247, 247, 247);
+}
+    .content{
+    display:flex;
+    background-color: rgb(216, 245, 236);
+    }
+    .img{
+        height: 245px;
+        width: 250px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img2{
+        height: 245px;
+        width: 250px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxtext{
+        font-family: sofia-pro, sans-serif;
+        font-size: 25px;
+        color: rgb(88, 88, 88);
+        font-style: italic;
+        font-weight: bolder;
+        }
+    .container{
+        position: relative;
+        margin-left: 119px;
+        float: left;
+    }
+    .container .card{
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #c4ded4;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .container .card:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgb(84, 157, 217);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    .container .card:hover:before
+    {
+        clip-path: circle(300px at 80% 20%);
+    }
+    .container .card:after
+    {
+        content: '1';
+        position: absolute;
+        top: 30%;
+        Left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgb(49, 49, 49);
+        margin-left: 165px;
+    }
+    .container .card .imgBx
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+    }
+    .container .card:hover .imgBx
+    {
+        top:0%;
+        transform: translateY(0%);
+    }
+    .container .card .imgBx img
+    {
+        position: absolute;
+        top: 50%;
+        Left: 50%;
+        transform: translate(-50%,-50%) rotate(-25deg);
+        width: 270px;
+    }
+    .container .card .boxtext
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+
+
+    .container2{
+        position: relative;
+        margin-left: 119px;
+        float: left;
+    }
+    .container2 .card2{
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #c4ded4;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .container2 .card2:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgb(176, 176, 176);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    .container2 .card2:hover:before
+    {
+        clip-path: circle(300px at 80% 20%);
+    }
+    .container2 .card2:after
+    {
+        content: '2';
+        position: absolute;
+        top: 30%;
+        Left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgb(49, 49, 49);
+        margin-left: 165px;
+    }
+    .container2 .card2 .imgBx2
+    {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+    }
+    .container2 .card2:hover .imgBx2
+    {
+        top:-5%;
+        transform: translateY(0%);
+    }
+    .container2 .card2 .imgBx2 img
+    {
+        position: absolute;
+        top: 50%;
+        Left: 50%;
+        transform: translate(-50%,-50%) rotate(-25deg);
+        width: 270px;
+    }
+    .container2 .card2 .boxtext
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+
+
+
+
+    .container3{
+        position: relative;
+        margin-left: 119px;
+        float: left;
+    }
+    .container3 .card3{
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #c4ded4;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .container3 .card3:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgb(95, 232, 99);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    .container3 .card3:hover:before
+    {
+        clip-path: circle(300px at 80% 20%);
+    }
+    .container3 .card3:after
+    {
+        content: '3';
+        position: absolute;
+        top: 30%;
+        Left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgb(49, 49, 49);
+        margin-left: 165px;
+    }
+    .container3 .card3 .imgBx3
+    {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+    }
+    .container3 .card3:hover .imgBx3
+    {
+        top:-5%;
+        transform: translateY(0%);
+    }
+    .container3 .card3 .imgBx3 img
+    {
+        position: absolute;
+        top: 50%;
+        Left: 50%;
+        transform: translate(-50%,-50%);
+        width: 270px;
+    }
+    .container3 .card3 .boxtext
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+    ::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: #b2eadf;
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: #53ecb2;
+}
+    </style> <!--the webkits above are Javascript functions to create a functioning scrollbar which matches our style-->
+</head>
+<body>
+
+    <a class = "about" href="about.html">About</a>
+    <a class = "home" href="home.html">Home</a>
+    <p class = "thing"><span style = "color: rgb(13, 79, 93);"> &lt;/&gt; </span>
+        <span style = "color: rgb(84, 147, 164)">W</span>
+        <span style = "color: rgb(81, 147, 164)">e</span>
+        <span style = "color: rgb(57, 118, 126)">x</span>
+        <span style = "color: rgb(64, 112, 115)">p</span>
+        <span style = "color: rgb(57, 104, 112)">e</span>
+        <span style = "color: rgb(55, 82, 90)">r</span>
+        <span style = "color:rgb(42, 48, 50)">t</span></p> <!--the heading and nav bar of my website-->
+<br>
+<br>
+
+<div class = "content">
+    <img class = "thumbnail" src="personalp.webp">
+    <div>
+        <p class = "title">Intro to HTML</p>
+        <p class = "text">HTML (HyperText Markup Language) is a standard markup language used for creating and structuring web pages. It is the foundation of most websites, and is used to define the content and structure of web pages, as well as the relationships between different elements on a page. </p>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div style="margin:0 auto;display: flex;flex-direction:row;justify-content: space-around" class = "content">
+    <div>
+        <p class="titletwo">Intro to CSS</p>
+        <p class = "texttwo">CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in a markup language. It is most commonly used with HTML to style web pages, but can also be used with other markup languages such as XML. </p>
+    </div>
+    <div>
+        <img class = "thumbnailtwo" src="css.jpg">
+    </div>
+</div>
+<br>
+<br>
+
+
+
+
+
+<div class = "container">
+    <div class = "card">
+        <div class = "imgBx">
+            <img src="vscode.png" class="img">
+        </div>
+        <div class = "contentBx">
+            <a href = lesson1.html class = "boxtext">Get Started</a>
+        </div>
+    </div>
+</div>
+
+<div class = "container2">
+    <div class = "card2">
+        <div class = "imgBx2">
+            <img src="gear.png" class="img2">
+        </div>
+        <div class = "contentBx2">
+            <a href = lesson2.html class = "boxtext">Basics</a>
+        </div>
+    </div>
+</div>
+
+<div class = "container3">
+    <div class = "card3">
+        <div class = "imgBx3">
+            <img src="plus.png" class="img3">
+        </div>
+        <div class = "contentBx3">
+            <a href = lesson3.html class = "boxtext">Extra Resources</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
